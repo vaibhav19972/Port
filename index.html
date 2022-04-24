@@ -1,121 +1,448 @@
 <!DOCTYPE html>
-<html>
-  <head>
-      
-      <link rel="stylesheet" href="style.css"> 
-      <title>Coffee shop</title>
-  </head>
-  
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body>
-      <header>
-          <h1 >
-              WEB DEV.
-          </h1>
-      </header>
-      
-      <nav >
-        <a href="index.html" > <i>HOME</i> </a>
-        <a href="html_basic.html" > <i>HTML 5</i> </a>
-        <a href="#" > <i>CSS</i> </a>
-        <a href="#" > <i>JAVAscript</i> </a>
-        <a href="#" > <i>React.js</i> </a>
-        <a href="#" > <i>Contact us</i> </a>
-        <a href="signup.html" target="_blank"> <i>Login/Signup</i> </a>
-      </nav>
-      <img src="html5.png" alt="an html5 image">
-      <h2 style=>What is HTML</h2>
-      
-      <p>
-          As we all know html stands for <u>hyper text mark up language</u><br>
-          in this we highlight text using tags i.e <tag> <br>
-          ther are 2 types of tags <b>singelton</b> and <b>paired</b><br>
-          tags do everything in html like i am changing lines of this para <br>
-          with help of &lt br &gt tag inspect to look for urself <br>
-          
-      </p>
-      <hr>
-      <p style="text-align: center;">BELOW ARE THE USES OF DIFFERENT TAGS PROVIDED IN HTML</p>
-      <hr>
-      
-      <a href="https://google.com" target="_blank"> Google</a>
-      <hr>
-      <img src="img.png"  alt="this is a img">
-      <iframe heigth="50" width="600" src="https://www.youtube.com/embed/2QR11oDukn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe height="200" src="https://vaibhav19972.github.io/"  ></iframe>
-      <hr>
-        <video src="video1.mp4" height="200"; autoplay; controls poster="img.png"; alt="this is a video"></video>
-       
-      <hr>
-      
-      <!-- this is a comment-->
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive Portfolio Website</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav_logo">Vaibhav</a>
+
+                <div class="nav_menu" id="nav-menu">
+                    <ul class="nav_list grid">
+                        <li class="nav_item">
+                            <a href="#home" class="nav_link">
+                                <i class="uil uil-home nav_icon" ></i> Home
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#about" class="nav_link">
+                                <i class="uil uil-user nav_icon" ></i> About
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#skills" class="nav_link">
+                                <i class="uil uil-notebooks nav_icon" ></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#services" class="nav_link">
+                                <i class="uil uil-briefcase-alt nav_icon" ></i> Services
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#portfolio" class="nav_link">
+                                <i class="uil uil-scenery nav_icon" ></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#contact" class="nav_link">
+                                <i class="uil uil-message nav_icon" ></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav_close nav_icon  " id="nav-close"></i>
+                </div>
+                <div class="nav_btns">
+                    <div class="nav_toggle" id="nav-toggle">
+                        <i class="uil uil-apps nav_icon "></i>   
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home_container container grid">
+                    <div class="home_content grid">
+                        <div class="home_social">
+                            <a href="https://www.linkedin.com/in/vaibhav-raikwar-68b053219/" target="_blank" class="home_social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+
+                            <a href="https://github.com/vaibhav19972" target="_blank" class="home_social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+
+                            <a href="https://auth.geeksforgeeks.org/user/raikwarvaibhav95/profile" target="_blank" class="home_social-icon">
+                                <i class="uil uil-brackets-curly"></i>
+                            </a>
+                        </div>
+
+                        <div class="home_img">
+                            <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    <image class="home_blob-img" x="10" y="0" href="assets/img/vaibhav.png"/>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="home_data">
+                            <h1 class="home_title"> Hi, I'am Vaibhav</h1>
+                            <h3 class="home_subtitle">Frontend/Backend developer</h3>
+                            <p class="home_description">Good knowledge of web design and producing quality work</p>
+                            <a href="#contact" class="button">   <!--  button--flex  -->
+                                Contact Me<i class="uil uil-message button_icon" ></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home_scroll">
+                        <a href="#about" class="home_scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home_scroll-mouse"></i>
+                            <span class="home_scroll-name">Scroll Down</span>
+                            <i class="uil uil-angle-down home_scroll-arrow"></i>
+                            
+                        </a>
+                    </div>
+                </div> 
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section_title">About me</h2>
+                <span class="section_subtitle">My introduction</span>
+
+                <div class="about_container container grid">
+                   <img src="assets/img/about.jpg" alt="" class="about_img " >
+
+                   <div class="about_data">
+                       <p class="about_description">
+                          Web developer, with extensive knowledge and experience,working in web technologies and Ui / Ux design, delivering quality work. </p> 
     
-      <p>
-          "we are very pleased " to inform you that<br>
-          we can do this<u> &lth6&gt STAR DUST &lt/h6&gt <br></u>
-      </p>
-      <p2>Lorem ipsum dolor,<b> sit amet consectetur adipisicing elit. </b>Praesentium repudiandae<br> <i>sint non tempore! Minus quia, </i>corporis laboriosam ex exercitationem ab excepturi ea totam. <br>Numquam harum ipsam odit esse assumenda hic unde explicabo, excepturi voluptatem <br>consequatur deserunt nemo ab nihil aliquid corporis! Ullam unde asperiores fuga <br>
-        dicta, aspernatur quibusdam explicabo magni?</p2>
-        <p2>
-           <br>10<sup>10</sup><br>
-           log<sub>2</sub><br>
-           (a+b)<sup>2</sup><br>
+                        <div class="about_info">
+                            <div>
+                                <span class="about_info-title">20+</span>
+                                <span class="about_info-name">Completed <br> project</span>
+                            </div>
+                        
+                            <div>
+                                <span class="about_info-title">500+</span>
+                                <span class="about_info-name">DSA questions <br> solved</span>
+                            </div>
+                        
+                            <div>
+                                <span class="about_info-title">01+</span>
+                                <span class="about_info-name">Years <br> experience</span>
+                            </div>
+                        </div>
+                        <div class="about_buttons">
+                            <a download="" href="../Content/resume.pdf" class="button ">  <!-- button--flex -->
+                                Download CV <i class="uil uil-import button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+            <!--main SKILLS -->
+            <section class="skills section" id="skills">
+                <h2 class="section_title">Skills</h2>
+                <span class="section_subtitle">My technical level</span>
 
-        </p2>
-        <h2> Ghar banane ki recipe</h2>
-        <ol type="i">
-            <li>loan lo</li>
-            <li>plot karedo</li>
-            <li>majdoor karido
-                <ul>
-                  <li> 500/hr</li>
-                  <li> 750/hr</li>
-                  <li> 900/hr</li>
-               </ul>
-            </li>
-            <li>ab kera se do ghre </li>
-            <li>kerai se loan cukao</li>
+                <div class="skills_container container grid">
+                    <div>
+                        <!--==================== SKILLS -1 ====================-->
+                        <div class="skills_content skills_open">
+                            <div class="skills_header">
+                                <i class="uil uil-arrow skills_icon"></i>
 
-        </ol>
-        <hr>
-        <hr>
-     <p3>
-         <b>Lorem ipsum &ensp; dolor sit amet consectetur adipisicing elit. Magni accusamus voluptatibus natus</b><br><small> eos corrupti. Quae fugiat maiores necessitatibus officiis molestias asperiores itaque?</small><br> Est nesciunt rerum quis recusandae eligendi. Quasi, autem nesciunt vitae praesentium neque <br>culpa asperiores. Quis&ensp;&ensp;&ensp; fuga unde veniam, eveniet voluptate placeat dignissimos! Laboriosam <br>voluptates accusantium temporibus nobis cupiditate reiciendis aut est animi, incidunt <br>molestiae. Laborum voluptas eveniet facilis. Vero, nostrum? Aliquam saepe officiis odit <br>architecto facere? Dolorem eius incidunt odio quasi quisquam officia nihil voluptatem omnis <br>ipsa sunt, <i><u>voluptas aliquid debitis sed nesciunt dignissimos repellendus impedit culpa rerum</u></i> <br>tenetur libero saepe obcaecati veritatis eaque. Necessitatibus, illum. Deleniti, illum.
-     </p3>
-     <hr>
-     <hr>
-     <table>
-         <thead>
-             <tr>
-               <th>subject</th>
-               <th>theory</th>
-               <th>practical</th>
-               <th>total</th>
-          
-             </tr>
-         </thead>
-         <tbody>
-             <tr>
-              <td>english</th>
-              <td>70</th>
-              <td>15</th>
-              <td>85</th>
-              
-            </tr>
-            <tr>
-                <td>Math</td>
-            </tr>
-         </tbody>
-         <tfoot>
-             <tr>
-                 <th colspan="3">total</th>
-                 <th>final grade</th>
-            </tr>
-        </tfoot>
-     </table>
+                                <div>
+                                    <h1 class="skills_title">Frontend developer</h1>
+                                    <span class="skills_subtitle"> JavaScript + React </span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills_arrow"></i>
+
+                            </div>
+
+                            <div class="skills_list grid">
+                                <div class="skills_data">
+                                    <div class="skill_title">
+                                        <h3 class="skill_name">HTML</h3>
+                                        <span class="skill_number">80%</span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage skills_html"></span>
+                                    </div>
+                                </div>
+                                <div class="skills_data">
+                                    <div class="skill_title">
+                                        <h3 class="skill_name">CSS</h3>
+                                        <span class="skill_number">75%</span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage skills_css"></span>
+                                    </div>
+                                </div>
+                                <div class="skills_data">
+                                    <div class="skill_title">
+                                        <h3 class="skill_name">BootStrap 5.0</h3>
+                                        <span class="skill_number">70%</span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage skills_bootstrap"></span>
+                                    </div>
+                                </div>
+                                <div class="skills_data">
+                                    <div class="skill_title">
+                                        <h3 class="skill_name">JavaScript</h3>
+                                        <span class="skill_number">70%</span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage skills_javascript"></span>
+                                    </div>
+                                </div>
+                                <div class="skills_data">
+                                    <div class="skill_title">
+                                        <h3 class="skill_name">React</h3>
+                                        <span class="skill_number">75%</span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage skills_react"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--==================== SKILLS -2 ====================-->
+                        <div class="skills_content skills_close">
+                            <div class="skills_header">
+                                <i class="uil uil-cloud-database-tree skills_icon"></i>
+
+                                <div>
+                                    <h1 class="skills_title">Backend developer</h1>
+                                    <span class="skills_subtitle"> Java 8 + Springboot </span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills_arrow"></i>
+
+                            </div>
+
+                            <div class="skills_list grid">
+                                <div class="skills_data">
+                                    <div class="skill_title">
+                                        <h3 class="skill_name">Java 8</h3>
+                                        <span class="skill_number">75%</span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage skills_java"></span>
+                                    </div>
+                                </div>
+                                <div class="skills_data">
+                                    <div class="skill_title">
+                                        <h3 class="skill_name">PHP</h3>
+                                        <span class="skill_number">70%</span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage skills_php"></span>
+                                    </div>
+                                </div>
+                                <div class="skills_data">
+                                    <div class="skill_title">
+                                        <h3 class="skill_name">Node.js</h3>
+                                        <span class="skill_number">65%</span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage skills_node"></span>
+                                    </div>
+                                </div>
+                                <div class="skills_data">
+                                    <div class="skill_title">
+                                        <h3 class="skill_name">Springboot</h3>
+                                        <span class="skill_number">65%</span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage skills_spring"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>       
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!--main QUALIFICATION -->
+            <section class="qualification section">
+                <h2 class="section_title">Qualification</h2>
+                <span class="section_subtitle">My journney till now</span>
+
+                <div class="qualification_container container">
+                    <div class="qualification_tabs">
+                        <div class="qualification_button button--flex qualification_active" data-target='#edu'>
+                            <i class="uil uil-graduation-cap qualification_icon" ></i>
+                            Education
+                        </div>
     
-   
-  </body>
+                        <div class="qualification_button button--flex" data-target="#work">
+                            <i class="uil uil-briefcase-alt qualification_icon" ></i>
+                            Work
+                        </div>
+            
+                    </div>
+                    <div class="qualification_sections">
+                        <!--   qualification  -->
+                        <div class="qualification_content qualification_active" data-content id="edu">
+                            <!--   content 1 -->
+                            <div class="qualification_data">
+                                <div>
+                                    <h3 class="qualification_title">Higher Secondary</h3>
+                                    <span class="qualification_subtitle">Shealing Home</span>
+                                    <div class="qualification_calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2014-2016
+                                    </div>
+                                </div>
 
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                            </div>
+                            <!--   content 2 -->
+                            <div class="qualification_data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification_title">Computer Engineering</h3>
+                                    <span class="qualification_subtitle">Medi-caps University</span>
+                                    <div class="qualification_calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2016-2021
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                            <!--   content 3 -->
+                            <div class="qualification_data">
+                                
+                                <div>
+                                    <h3 class="qualification_title">FullStack Web-Dev</h3>
+                                    <span class="qualification_subtitle">Acciojobs</span>
+                                    <div class="qualification_calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Current
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                  
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!--   work  -->
+                        <div class="qualification_content" data-content id="work">
+                            <!--   content 1 -->
+                            <div class="qualification_data">
+                                <div>
+                                    <h3 class="qualification_title">Invest Technologies</h3>
+                                    <span class="qualification_subtitle">Intern</span>
+                                    <div class="qualification_calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        06/2018-08/2018
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                            </div>
+                            <!--   content 2 -->
+                      
+                            <div class="qualification_data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                  
+                                </div>
+                                <div>
+                                    <h3 class="qualification_title">Software Engineer</h3>
+                                    <span class="qualification_subtitle">At Your Company</span>
+                                    <div class="qualification_calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        You decide
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SERVICES ====================-->
+            <section class="services section" id="services">
+                
+            </section>
+
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                
+            </section>
+
+            <!--==================== PROJECT IN MIND ====================-->
+            <section class="project section">
+
+            </section>
+
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section">
+                
+            </section>
+
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+         
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        
+
+        <!--==================== SWIPER JS ====================-->
+        <script src=""></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
