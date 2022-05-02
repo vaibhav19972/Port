@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         
         <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
@@ -16,7 +16,7 @@
         <title>Responsive Portfolio Website</title>
     </head>
     <body>
-        <!--==================== HEADER ====================-->
+        <!-- HEADER -->
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="#" class="nav_logo">Vaibhav</a>
@@ -39,13 +39,13 @@
                             </a>
                         </li>
                         <li class="nav_item">
-                            <a href="#services" class="nav_link">
-                                <i class="uil uil-briefcase-alt nav_icon" ></i> Services
+                            <a href="#qualification" class="nav_link">
+                                <i class="uil uil-briefcase-alt nav_icon" ></i> WorkEx
                             </a>
                         </li>
                         <li class="nav_item">
                             <a href="#portfolio" class="nav_link">
-                                <i class="uil uil-scenery nav_icon" ></i> Portfolio
+                                <i class="uil uil-scenery nav_icon" ></i> Porjects
                             </a>
                         </li>
                         <li class="nav_item">
@@ -64,9 +64,9 @@
             </nav>
         </header>
 
-        <!--==================== MAIN ====================-->
+        <!--= MAIN =-->
         <main class="main">
-            <!--==================== HOME ====================-->
+            <!--== HOME ==-->
             <section class="home section" id="home">
                 <div class="home_container container grid">
                     <div class="home_content grid">
@@ -106,7 +106,7 @@
                             <h1 class="home_title"> Hi, I'am Vaibhav</h1>
                             <h3 class="home_subtitle">Frontend/Backend developer</h3>
                             <p class="home_description">Good knowledge of web design and producing quality work</p>
-                            <a href="#contact" class="button">   <!--  button--flex  -->
+                            <a href="#contact" class="button button--flex">   <!--  button--flex  -->
                                 Contact Me<i class="uil uil-message button_icon" ></i>
                             </a>
                         </div>
@@ -123,7 +123,7 @@
                 </div> 
             </section>
 
-            <!--==================== ABOUT ====================-->
+            <!-- Main ABOUT -->
             <section class="about section" id="about">
                 <h2 class="section_title">About me</h2>
                 <span class="section_subtitle">My introduction</span>
@@ -152,7 +152,7 @@
                             </div>
                         </div>
                         <div class="about_buttons">
-                            <a download="" href="Content/resume.pdf" class="button ">  <!-- button--flex -->
+                            <a download="" href="../Content/resume.pdf" class="button button--flex ">  <!-- button--flex -->
                                 Download CV <i class="uil uil-import button_icon"></i>
                             </a>
                         </div>
@@ -160,13 +160,13 @@
                 </div>
             </section>
 
-            <!--main SKILLS -->
+            <!--Main SKILLS -->
             <section class="skills section" id="skills">
                 <h2 class="section_title">Skills</h2>
                 <span class="section_subtitle">My technical level</span>
 
                 <div class="skills_container container grid">
-                    <div>
+                 
                         <!--==================== SKILLS -1 ====================-->
                         <div class="skills_content skills_open">
                             <div class="skills_header">
@@ -281,15 +281,16 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>       
+                        </div>   
+                            
 
-                    </div>
+                 
 
                 </div>
             </section>
 
-            <!--main QUALIFICATION -->
-            <section class="qualification section">
+            <!--Main QUALIFICATION -->
+            <section class="qualification section" id="qualification">
                 <h2 class="section_title">Qualification</h2>
                 <span class="section_subtitle">My journney till now</span>
 
@@ -405,19 +406,119 @@
                 </div>
             </section>
 
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-                
-            </section>
+            <!-- <section class="services section" id="services"></section> -->
 
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section" id="portfolio">
+                <h2 class="section_title">Porjects</h2>
+                <span class="section_subtitle">Most recent work</span>
+                <div class="portfolio_container container">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
                 
+                            <!--  porject 2  -->
+                            <div class="portfolio_content grid swiper-slide ">
+                                <div>
+                                    <img src="assets/img/calculator.png" alt="your internet sucks" class="portfolio_img">
+                    
+                                    <div>
+                                        <h3 class="portfolio_title">online Calculator</h3>
+                                        <p class="portfolio_description">Perform mathematical calculations better than you. More
+                                            functionalities will add later</p>
+                                        <a href="https://vaibhav19972.github.io/JavaScript/exe/project3/ " target="_blank"
+                                            class="button button--flex button--small portfolio_button">
+                                            Check it out!
+                                            <i class="uil uil-angle-double-right button_icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                
+                            <!--  porject 1  -->
+                            <div class="portfolio_content grid swiper-slide">
+                                <div>
+                                    <img src="assets/img/countdown.png" alt="" class="portfolio_img">
+                
+                                    <div>
+                                        <h3 class="portfolio_title">Countdown timer</h3>
+                                        <p class="portfolio_description">People keep forgetting. So here is the countdown timer see how
+                                            much time is left.</p>
+                                        <a href="https://vaibhav19972.github.io/JavaScript/exe/project4/" target="_blank"
+                                            class="button button--flex button--small portfolio_button">
+                                            tik-tok
+                                            <i class="uil uil-angle-double-right button_icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!--  porject  -->
+                            <div class="portfolio_content grid swiper-slide">
+                                <div>
+                                    <img src="assets/img/gallery.png" alt="" class="portfolio_img">
+                
+                                    <div>
+                                        <h3 class="portfolio_title">Gallery</h3>
+                                        <p class="portfolio_description">Made gallery showcase using flex model</p>
+                                        <a href="https://vaibhav19972.github.io/JavaScript/exe/Project2/" target="_blank"
+                                            class="button button--flex button--small portfolio_button">
+                                            Demo
+                                            <i class="uil uil-angle-double-right button_icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                
+                             <!--  porject    -->
+                            <div class="portfolio_content grid swiper-slide">
+                                <div>
+                                    <img src="assets/img/intrestcal.png" alt="" class="portfolio_img">
+                
+                                    <div>
+                                        <h3 class="portfolio_title">Bank Intrest Calcu.</h3>
+                                        <p class="portfolio_description">Calculates interest as per the given amount. </p>
+                                        <a href="https://vaibhav19972.github.io/JavaScript/Assignments/A1/" target="_blank"
+                                            class="button button--flex button--small portfolio_button">
+                                            Check it out!
+                                            <i class="uil uil-angle-double-right button_icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!--  porject   -->
+                            <div class="portfolio_content grid swiper-slide">
+                                <div>
+                                    <img src="assets/img/bulbonoff.png" alt="" class="portfolio_img">
+                
+                                    <div>
+                                        <h3 class="portfolio_title">Online bulb</h3>
+                                        <p class="portfolio_description"> Changes DOM elements using JavaScript and single button
+                                            triggers mutilply functions toggle condition </p>
+                                        <a href="https://vaibhav19972.github.io/JavaScript/exe/project1/onoff.html" target="_blank"
+                                            class="button button--flex button--small portfolio_button">
+                                            Demo
+                                            <i class="uil uil-angle-double-right button_icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    
+                </div>
             </section>
 
             <!--==================== PROJECT IN MIND ====================-->
             <section class="project section">
-
+                 <h1 style="text-align: center;">Work in progress</h1>
+                 <h2 style="text-align: center;">Still building</h2>
             </section>
 
             <!--==================== TESTIMONIAL ====================-->
@@ -440,7 +541,7 @@
         
 
         <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>

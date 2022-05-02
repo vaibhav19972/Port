@@ -73,10 +73,22 @@ tabs.forEach(tab =>{
 
 /*==================== SERVICES MODAL ====================*/
 
+   
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 
+let swiper = new Swiper(".mySwiper", {
+    loop : true ,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true
+    }
 
+  });
 /*==================== TESTIMONIAL ====================*/
 
 
@@ -90,3 +102,6 @@ tabs.forEach(tab =>{
 
 
 /*==================== DARK LIGHT THEME ====================*/ 
+
+
+
